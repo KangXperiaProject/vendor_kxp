@@ -5,3 +5,11 @@
 #Use a free file manager untill AOKP adds an official filemanager
 PRODUCT_COPY_FILES += \
     vendor/kxp/prebuilt/app/FileManager.apk:system/app/FileManager.apk
+
+# Unofficial packages that KangXperiaProject uses from trees outside AOKP
+PRODUCT_PACKAGES += \
+    Apollo \
+    Spearmint \
+    Grape \
+    Bubble \
+    Cherry
