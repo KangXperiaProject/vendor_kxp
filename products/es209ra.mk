@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
+# Call KXP vendor to get unofficial additions
+$(call inherit-product, vendor/kxp/common_kxp.mk)
+
 # es209ra overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/es209ra
 
@@ -23,8 +26,8 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=LT18i BUILD_FINGERPRINT="SEMC/LT18i
 PRODUCT_PACKAGES += \
     Camera \
     Mms \
-    Apollo
+    Music
 
 # Copy anzu specific prebuilt files
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip

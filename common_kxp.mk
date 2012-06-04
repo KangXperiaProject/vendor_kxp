@@ -4,7 +4,9 @@
 
 #Use a free file manager untill AOKP adds an official filemanager
 PRODUCT_COPY_FILES += \
-    vendor/kxp/prebuilt/app/FileManager.apk:system/app/FileManager.apk
+    vendor/kxp/prebuilt/app/FileManager.apk:system/app/FileManager.apk \
+    vendor/kxp/prebuilt/app/AndroidTerm.apk:system/app/AndroidTerm.apk \
+    vendor/kxp/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Unofficial packages that KangXperiaProject uses from trees outside AOKP
 PRODUCT_PACKAGES += \
@@ -12,4 +14,6 @@ PRODUCT_PACKAGES += \
     Spearmint \
     Grape \
     Bubble \
-    Cherry
+    Cherry \
+    DSPManager \
+    Trebuchet
