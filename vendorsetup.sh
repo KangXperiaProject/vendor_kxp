@@ -6,3 +6,4 @@ add_lunch_combo aokp_zeus-userdebug
 add_lunch_combo aokp_es209ra-userdebug
 add_lunch_combo aokp_shakira-userdebug
 add_lunch_combo aokp_smultron-userdebug
+add_lunch_combo aokp_satsuma-userdebug
