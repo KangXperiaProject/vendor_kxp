@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for smultron
-$(call inherit-product, device/semc/coconutdevice_coconut.mk)
+$(call inherit-product, device/semc/coconut/device_coconut.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
