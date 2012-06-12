@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for smultron
-$(call inherit-product, device/semc/smultron/device_coconut.mk)
+$(call inherit-product, device/semc/coconutdevice_coconut.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
@@ -21,7 +21,7 @@ PRODUCT_MODEL := Live with Walkman
 PRODUCT_MANUFACTURER := SEMC
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST15i BUILD_FINGERPRINT="SEMC/LT18i_0000-0000/LT18i:4.0.3/4.1.C.0.7/-H9_3w:user/release-keys" PRIVATE_BUILD_DESC="WT19i-user 4.0.3 4.1.C.0.7 -H9_3w test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST15i BUILD_FINGERPRINT="SEMC/WT19i_1254-7338/WT19i:4.0.4/4.1.B.0.431/UL5_3w:user/release-keys" PRIVATE_BUILD_DESC="WT19i-user 4.0.3 4.1.C.0.7 -H9_3w test-keys"
 
 
 # Camera
