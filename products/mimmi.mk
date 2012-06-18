@@ -1,5 +1,5 @@
 # Inherit device configuration
-$(call inherit-product, device/semc/shakira/device_shakira.mk)
+$(call inherit-product, device/semc/shakira/device_mimmi.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
@@ -10,14 +10,14 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 # Call kxp vendor to get unofficial additions
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
-# shakira overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/shakira
+# mimmi overlay
+#PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/mimmi
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_shakira
+PRODUCT_NAME := aokp_mimmi
 PRODUCT_BRAND := SEMC
-PRODUCT_DEVICE := shakira
-PRODUCT_MODEL := E15i
+PRODUCT_DEVICE := mimmi
+PRODUCT_MODEL := U20i
 PRODUCT_MANUFACTURER := Sony Ericsson
 
 # Camera
@@ -28,4 +28,4 @@ PRODUCT_PACKAGES += \
 
 # Copy anzu specific prebuilt files
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_320_480.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_240_320.zip:system/media/bootanimation.zip
