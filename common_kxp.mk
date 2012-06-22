@@ -16,4 +16,5 @@ PRODUCT_PACKAGES += \
     Bubble \
     Cherry \
     DSPManager \
-    Trebuchet
+    Trebuchet \
+    AchepClock
