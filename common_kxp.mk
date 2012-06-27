@@ -15,6 +15,7 @@ PRODUCT_PACKAGES += \
     Grape \
     Bubble \
     Cherry \
+    Orange \
     DSPManager \
     Trebuchet \
     AchepClock
