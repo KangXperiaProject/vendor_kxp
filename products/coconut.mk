@@ -11,7 +11,7 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
 # coconut overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/coconut
+PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/coconut
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_coconut
@@ -26,6 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="SEMC/WT19i_1254-7338/WT19i:4.0.4/4.1.B.0.431/UL5_3w:user/release-keys" \
     PRIVATE_BUILD_DESC="WT19i-user 4.0.3 4.1.C.0.7 -H9_3w test-keys"
 
+#Dalvik fix
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-data-only=1
 
