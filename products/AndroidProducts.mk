@@ -9,5 +9,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/mimmi.mk \
     $(LOCAL_DIR)/smultron.mk \
     $(LOCAL_DIR)/satsuma.mk \
-    $(LOCAL_DIR)/coconut.mk
+    $(LOCAL_DIR)/coconut.mk \
     $(LOCAL_DIR)/mango.mk \
