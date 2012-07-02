@@ -10,4 +10,5 @@ add_lunch_combo aokp_mimmi-userdebug
 add_lunch_combo aokp_smultron-userdebug
 add_lunch_combo aokp_satsuma-userdebug
 add_lunch_combo aokp_coconut-userdebug
+add_lunch_combo aokp_mango-userdebug
 
