@@ -31,3 +31,7 @@ PRODUCT_PACKAGES += \
 # Copy anzu specific prebuilt files
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
+
+#Fix signal strength
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril.v3=signalstrength
