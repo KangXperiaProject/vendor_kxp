@@ -34,4 +34,5 @@ PRODUCT_COPY_FILES += \
 
 #Fix signal strength
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril.v3=signalstrength
+    ro.telephony.ril.v3=signalstrength,datacall,skipbrokendatacall,icccardstatus,1
+
