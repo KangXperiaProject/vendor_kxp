@@ -11,7 +11,7 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
 # smultron overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/smultron
+PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/smultron
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_smultron
