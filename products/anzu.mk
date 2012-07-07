@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for anzu
-$(call inherit-product, device/semc/anzu/device_anzu.mk)
+$(call inherit-product-if-exists, device/semc/anzu/device_anzu.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)

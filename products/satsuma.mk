@@ -2,7 +2,7 @@
 $(call inherit-product, device/semc/satsuma/device_satsuma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common_phone.mk)
+$(call inherit-product-if-exists, vendor/aokp/configs/common_phone.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)

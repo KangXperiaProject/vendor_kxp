@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for es209ra
-$(call inherit-product, device/semc/es209ra/device_es209ra.mk)
+$(call inherit-product-if-exists, device/semc/es209ra/device_es209ra.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)

@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for smultron
-$(call inherit-product, device/semc/mango/device_mango.mk)
+$(call inherit-product-if-exists, device/semc/mango/device_mango.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)

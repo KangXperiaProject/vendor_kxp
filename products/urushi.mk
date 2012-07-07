@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for urushi
-$(call inherit-product, device/semc/urushi/device_urushi.mk)
+$(call inherit-product-if-exists, device/semc/urushi/device_urushi.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)

@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for zeus
-$(call inherit-product, device/semc/zeus/device_zeus.mk)
+$(call inherit-product-if-exists, device/semc/zeus/device_zeus.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
