@@ -1,5 +1,5 @@
 # Inherit device configuration
-$(call inherit-product, device/semc/shakira/device_shakira.mk)
+$(call inherit-product-if-exists, device/semc/shakira/device_shakira.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)

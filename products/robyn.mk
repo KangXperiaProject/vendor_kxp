@@ -1,5 +1,5 @@
 # Inherit device configuration
-$(call inherit-product, device/semc/robyn/device_robyn.mk)
+$(call inherit-product-if-exists, device/semc/robyn/device_robyn.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
