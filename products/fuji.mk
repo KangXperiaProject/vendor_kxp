@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for fuji
-$(call inherit-product, device/semc/fuji/device_fuji.mk)
+$(call inherit-product-if-exists, device/semc/fuji/device_fuji.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
