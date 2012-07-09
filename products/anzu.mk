@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
+# Call KXP vendor to get unofficial additions
+$(call inherit-product, vendor/kxp/common_kxp.mk)
+
 # Anzu overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/anzu
 
@@ -23,7 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=LT18i BUILD_FINGERPRINT="SEMC/LT18i
 PRODUCT_PACKAGES += \
     Camera \
     Mms \
-    Apollo
+    Music
 
 # Copy anzu specific prebuilt files
 PRODUCT_COPY_FILES += \
