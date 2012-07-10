@@ -1,5 +1,5 @@
-# Inherit AOSP device configuration for zeus
-$(call inherit-product-if-exists, device/semc/zeus/device_zeus.mk)
+# Inherit AOSP device configuration for haida
+$(call inherit-product-if-exists, device/semc/haida/device_haida.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
@@ -10,17 +10,17 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 # Call KXP vendor to get unofficial additions
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
-# Zeus overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/zeus
+# urushi overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/urushi
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_zeus
+PRODUCT_NAME := aokp_haida
 PRODUCT_BRAND := SEMC
-PRODUCT_DEVICE := zeus
-PRODUCT_MODEL := Xperia Play
+PRODUCT_DEVICE := haida
+PRODUCT_MODEL := Xperia Ray
 PRODUCT_MANUFACTURER := SEMC
 
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=R800i BUILD_FINGERPRINT="SEMC/LT18i_0000-0000/LT18i:4.0.3/4.1.C.0.7/-H9_3w:user/release-keys" PRIVATE_BUILD_DESC="LT18i-user 4.0.3 4.1.C.0.7 -H9_3w test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=ST18i BUILD_FINGERPRINT="SEMC/ST18i_0000-0000/ST18i:4.0.3/4.1.C.0.7/-H9_3w:user/release-keys" PRIVATE_BUILD_DESC="ST18i-user 4.0.3 4.1.C.0.7 -H9_3w test-keys"
 
 # Camera
 PRODUCT_PACKAGES += \

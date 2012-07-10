@@ -10,4 +10,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/robyn.mk \
     $(LOCAL_DIR)/shakira.mk \
     $(LOCAL_DIR)/mimmi.mk \
-    $(LOCAL_DIR)/mango.mk 
+    $(LOCAL_DIR)/mango.mk \
+    $(LOCAL_DIR)/iyokan.mk \
+    $(LOCAL_DIR)/haida.mk \
+    $(LOCAL_DIR)/hallon.mk \
+    $(LOCAL_DIR)/zeusc.mk 
