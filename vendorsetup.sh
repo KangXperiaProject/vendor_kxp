@@ -11,4 +11,8 @@ add_lunch_combo aokp_smultron-userdebug
 add_lunch_combo aokp_satsuma-userdebug
 add_lunch_combo aokp_coconut-userdebug
 add_lunch_combo aokp_mango-userdebug
+add_lunch_combo aokp_iyokan-userdebug
+add_lunch_combo aokp_haida-userdebug
+add_lunch_combo aokp_hallon-userdebug
+add_lunch_combo aokp_zeusc-userdebug
 
