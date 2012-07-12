@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
 
-#Fix signal strength
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril.v3=signalstrength,datacall,skipbrokendatacall,icccardstatus,1
+#Fix signal strength (already in device tree )
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.telephony.ril.v3=signalstrength,datacall,skipbrokendatacall,icccardstatus,1
 
