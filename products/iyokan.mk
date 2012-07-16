@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for iyokan
-$(call inherit-product-if-exists, device/semc/iyokan/device_iyokan.mk)
+$(call inherit-product-if-exists, device/semc/iyokan/full_iyokan.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)

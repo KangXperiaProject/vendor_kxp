@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for haida
-$(call inherit-product-if-exists, device/semc/haida/device_haida.mk)
+$(call inherit-product-if-exists, device/semc/haida/full_haida.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)

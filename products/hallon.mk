@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for hallon
-$(call inherit-product-if-exists, device/semc/hallon/device_hallon.mk)
+$(call inherit-product-if-exists, device/semc/hallon/full_hallon.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)

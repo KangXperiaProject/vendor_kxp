@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for satsuma
-$(call inherit-product, device/semc/satsuma/device_satsuma.mk)
+$(call inherit-product, device/semc/satsuma/full_satsuma.mk)
 
 # Inherit common product files.
 $(call inherit-product-if-exists, vendor/aokp/configs/common_phone.mk)
