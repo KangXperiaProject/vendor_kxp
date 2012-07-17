@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for zeus
-$(call inherit-product-if-exists, device/semc/zeus/full_zeus.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
+
+# Inherit AOSP device configuration for zeus
+$(call inherit-product-if-exists, device/semc/zeus/full_zeus.mk)
 
 # Call KXP vendor to get unofficial additions
 $(call inherit-product, vendor/kxp/common_kxp.mk)
