@@ -12,7 +12,7 @@ $(call inherit-product-if-exists, device/semc/anzu/full_anzu.mk)
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
 # Anzu overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/anzu
+#PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/anzu
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_anzu
