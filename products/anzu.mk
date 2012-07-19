@@ -30,5 +30,6 @@ PRODUCT_PACKAGES += \
     Music
 
 # Copy anzu specific prebuilt files
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
+PRODUCT_PACKAGES += \
+    bootanimation_480_854 \
+    ThinkFree  
