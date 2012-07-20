@@ -6,7 +6,7 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # Inherit AOSP device configuration for anzu
-$(call inherit-product-if-exists, device/semc/anzu/full_anzu.mk)
+$(call inherit-product-if-exists, device/semc/anzu/device_anzu.mk)
 
 # Call KXP vendor to get unofficial additions
 $(call inherit-product, vendor/kxp/common_kxp.mk)
