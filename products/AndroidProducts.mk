@@ -1,6 +1,7 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/anzu.mk \
-    $(LOCAL_DIR)/nozomi.mk
+    $(LOCAL_DIR)/nozomi.mk \
+    $(LOCAL_DIR)/hikari.mk
 #    $(LOCAL_DIR)/zeus.mk \
 #    $(LOCAL_DIR)/es209ra.mk \
 #    $(LOCAL_DIR)/smultron.mk \
