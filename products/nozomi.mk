@@ -11,8 +11,8 @@ $(call inherit-product-if-exists, device/sony/nozomi/full_nozomi.mk)
 # Call KXP vendor to get unofficial additions
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
-# Anzu overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/anzu
+# Nozomi overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/nozomi
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_nozomi
