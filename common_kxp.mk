@@ -1,3 +1,6 @@
+#we will change the $USER variable here to make our builds have better naming :)
+USER := kxp_${USER}_build1-r2
+
 #we will use our own bootlogo (when it is created)
 #PRODUCT_COPY_FILES += \
 #   vendor/kxp/prebuilt/bootlogo/$(PRODUCT_DEVICE).rle:root/initlogo.rle
