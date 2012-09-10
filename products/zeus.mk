@@ -20,7 +20,11 @@ PRODUCT_DEVICE := zeus
 PRODUCT_MODEL := Xperia Play
 PRODUCT_MANUFACTURER := SEMC
 
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=R800i BUILD_FINGERPRINT="SEMC/LT18i_0000-0000/LT18i:4.0.3/4.1.C.0.7/-H9_3w:user/release-keys" PRIVATE_BUILD_DESC="LT18i-user 4.0.3 4.1.C.0.7 -H9_3w test-keys"
+#skip asserts for now
+TARGET_OTA_ASSERT_SKIP := true
+
+#Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=R800i BUILD_FINGERPRINT="SEMC/R800i_0000-0000/R800i:4.0.3/4.1.H.0.4/-z9-3w:user/release-keys" PRIVATE_BUILD_DESC="R800i-user 4.0.3 4.1.H.0.4 -z9-3w test-keys"
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -28,6 +32,7 @@ PRODUCT_PACKAGES += \
     Mms \
     Music
 
-# Copy zeus specific prebuilt files
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
+# Copy anzu specific prebuilt files
+PRODUCT_PACKAGES += \
+    bootanimation_480_854 \
+    ThinkFree  

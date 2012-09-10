@@ -1,4 +1,3 @@
-
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 

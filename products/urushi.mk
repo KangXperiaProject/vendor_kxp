@@ -20,7 +20,11 @@ PRODUCT_DEVICE := urushi
 PRODUCT_MODEL := Xperia Ray
 PRODUCT_MANUFACTURER := SEMC
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST18i BUILD_FINGERPRINT="SEMC/ST18i_1252-5332/ST18i:4.0.4/4.1.B.0.431/UL5_3w:user/release-keys" PRIVATE_BUILD_DESC="ST18i-user 4.0.4 4.1.B.0.431 UL5_3w test-keys"
+#skip asserts for now
+TARGET_OTA_ASSERT_SKIP := true
+
+#Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=MT11i BUILD_FINGERPRINT="SEMC/MT11i_1254-2184/MT11i:4.0.4/4.1.B.0.431/UL5_3w:user/release-keys" PRIVATE_BUILD_DESC="MT11i-user 4.0.4 4.1.B.0.431 UL5_3w test-keys"
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -28,6 +32,7 @@ PRODUCT_PACKAGES += \
     Mms \
     Music
 
-# Copy zeus specific prebuilt files
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
+# Copy urushi specific prebuilt files
+PRODUCT_PACKAGES += \
+    bootanimation_480_854 \
+    ThinkFree  

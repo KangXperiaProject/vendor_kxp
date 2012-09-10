@@ -1,11 +1,11 @@
 # Inherit common product files.
-$(call inherit-product-if-exists, vendor/aokp/configs/common_phone.mk)
+$(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # Inherit AOSP device configuration for satsuma
-$(call inherit-product, device/semc/satsuma/full_satsuma.mk)
+$(call inherit-product-if-exists, device/semc/satsuma/full_satsuma.mk)
 
 # Call KXP vendor to get unofficial additions
 $(call inherit-product, vendor/kxp/common_kxp.mk)
@@ -20,12 +20,11 @@ PRODUCT_DEVICE := satsuma
 PRODUCT_MODEL := Xperia Active
 PRODUCT_MANUFACTURER := SEMC
 
-#Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST17i BUILD_FINGERPRINT="SEMC/ST17i_1254-6360/ST17i:4.0.4/4.1.B.0.431/UL5_3w:user/release-keys" PRIVATE_BUILD_DESC="ST17i-user 4.0.4 4.1.B.0.431 UL5_3w test-keys"
+#skip asserts for now
+TARGET_OTA_ASSERT_SKIP := true
 
-#Dalvik fix
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dexopt-data-only=1
+#Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST17i BUILD_FINGERPRINT="SEMC/ST17i_1254-2184/ST17i:4.0.4/4.1.B.0.431/UL5_3w:user/release-keys" PRIVATE_BUILD_DESC="ST17i-user 4.0.4 4.1.B.0.431 UL5_3w test-keys"
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -34,5 +33,6 @@ PRODUCT_PACKAGES += \
     Music
 
 # Copy satsuma specific prebuilt files
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_320_480.zip:system/media/bootanimation.zip
+PRODUCT_PACKAGES += \
+    bootanimation_320_480 \
+    ThinkFree  
