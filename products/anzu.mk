@@ -35,3 +35,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootanimation_480_854 \
     ThinkFree  
+
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
