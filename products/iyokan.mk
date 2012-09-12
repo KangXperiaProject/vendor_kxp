@@ -4,27 +4,27 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
-# Inherit AOSP device configuration for zeus
-$(call inherit-product-if-exists, device/semc/zeusc/full_zeusc.mk)
+# Inherit AOSP device configuration for iyokan
+$(call inherit-product-if-exists, device/semc/iyokan/full_iyokan.mk)
 
 # Call KXP vendor to get unofficial additions
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
-# Zeus overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/zeus
+# iyokan overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/iyokan
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_zeusc
+PRODUCT_NAME := aokp_iyokan
 PRODUCT_BRAND := SEMC
-PRODUCT_DEVICE := zeusc
-PRODUCT_MODEL := Xperia Play CDMA
+PRODUCT_DEVICE := iyokan
+PRODUCT_MODEL := Xperia Pro
 PRODUCT_MANUFACTURER := SEMC
 
 #skip asserts for now
 TARGET_OTA_ASSERT_SKIP := true
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=R800i BUILD_FINGERPRINT="SEMC/R800i_0000-0000/R800i:4.0.3/4.1.H.0.4/-z9-3w:user/release-keys" PRIVATE_BUILD_DESC="R800i-user 4.0.3 4.1.H.0.4 -z9-3w test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=MK16i BUILD_FINGERPRINT="SEMC/MK16i_1254-2184/MK16i:4.0.4/4.1.B.0.431/UL5_3w:user/release-keys" PRIVATE_BUILD_DESC="MK16i-user 4.0.4 4.1.B.0.431 UL5_3w test-keys"
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
     Mms \
     Music
 
-# Copy anzu specific prebuilt files
+# Copy iyokan specific prebuilt files
 PRODUCT_PACKAGES += \
     bootanimation_480_854 \
     ThinkFree  
