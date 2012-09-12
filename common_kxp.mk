@@ -12,13 +12,13 @@ USER := kxp_build1-r3
 #    vendor/kxp/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Unofficial packages that KangXperiaProject uses from trees outside AOKP
-#PRODUCT_PACKAGES += \
-#    Apollo \
+PRODUCT_PACKAGES += \
+    Apollo \
+    DSPManager \
+    Trebuchet 
 #    Spearmint \
 #    Grape \
 #    Bubble \
 #    Cherry \
 #    Orange \
-#    DSPManager \
-#    Trebuchet \
 #    AchepClock
