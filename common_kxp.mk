@@ -7,7 +7,7 @@ USER := kxp_build1-r3
 
 #Use a free file manager and terminal untill AOKP adds an official filemanager
 PRODUCT_COPY_FILES += \
-    vendor/kxp/prebuilt/app/AndroidTerm.apk:system/app/AndroidTerminalEmulator.apk \
+    vendor/kxp/prebuilt/app/AndroidTerminalEmulator.apk:system/app/AndroidTerminalEmulator.apk \
     vendor/kxp/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
     vendor/kxp/prebuilt/app/FileManager.apk:system/app/FileManager.apk
 
