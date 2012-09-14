@@ -1,5 +1,22 @@
 #we will change the $USER variable here to make our builds have better naming :)
-USER := kxp_build1-r3
+USER := kxp_build1-r4
+
+# Goo updater app
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=kxp \
+    ro.goo.rom=kxp \
+    ro.goo.version=2104
+
+#Ota Updater Pro app
+PRODUCT_PROPERTY_OVERRIDES += \
+    otaupdater.otaid=kxp \
+    otaupdater.otaver=build1-r4 \
+    otaupdater.otatime=20120915-0000 \
+    otaupdater.noflash=1 \
+    otaudpater.rebootcmd=$$NULL$$
+
+PRODUCT_COPY_FILES += \
+    vendor/kxp/prebuilt/app/OTAUpdater-1.0.2.apk:system/app/OTAUpdater-1.0.2.apk
 
 #we will use our own bootlogo (when it is created)
 #PRODUCT_COPY_FILES += \
