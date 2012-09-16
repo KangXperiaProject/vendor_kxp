@@ -1,17 +1,17 @@
 #we will change the $USER variable here to make our builds have better naming :)
-USER := kxp_build1-r4
+USER := kxp_build2
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=kxp \
     ro.goo.rom=kxp \
-    ro.goo.version=2104
+    ro.goo.version=2201
 
 #Ota Updater Pro app
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=kxp \
-    otaupdater.otaver=build1-r4 \
-    otaupdater.otatime=20120915-0000 \
+    otaupdater.otaver=build2 \
+    otaupdater.otatime=20120917-0000 \
     otaupdater.noflash=1 \
     otaudpater.rebootcmd=$$NULL$$
 
