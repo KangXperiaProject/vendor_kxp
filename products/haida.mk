@@ -9,6 +9,7 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 $(call inherit-product-if-exists, device/semc/haida/full_haida.mk)
 
 # Call KXP vendor to get unofficial additions
+BOOTLOGO_SIZE := 480x854
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
 # Haida overlay

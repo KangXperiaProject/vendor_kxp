@@ -9,6 +9,7 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 $(call inherit-product-if-exists, device/sony/nozomi/full_nozomi.mk)
 
 # Call KXP vendor to get unofficial additions
+BOOTLOGO_SIZE := 720x1280
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
 # Nozomi overlay

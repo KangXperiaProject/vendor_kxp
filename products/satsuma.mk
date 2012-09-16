@@ -8,6 +8,7 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 $(call inherit-product-if-exists, device/semc/satsuma/full_satsuma.mk)
 
 # Call KXP vendor to get unofficial additions
+BOOTLOGO_SIZE := 320x480
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
 # satsuma overlay
