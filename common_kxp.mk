@@ -16,7 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     otaudpater.rebootcmd=$$NULL$$
 
 PRODUCT_COPY_FILES += \
-    vendor/kxp/prebuilt/app/OTAUpdater-1.0.2.apk:system/app/OTAUpdater-1.0.2.apk
+    vendor/kxp/prebuilt/app/OTAUpdater-1.0.3.apk:system/app/OTAUpdater-1.0.3.apk
 
 #we will use our own bootlogo 
 PRODUCT_COPY_FILES += \
