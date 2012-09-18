@@ -9,8 +9,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #Ota Updater Pro app
 PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=kxp \
-    otaupdater.otaver=build2 \
+    otaupdater.otaid=$(PRODUCT_DEVICE)_$(USER) \
+    otaupdater.otaver=$(USER) \
     otaupdater.otatime=20120917-0000 \
     otaupdater.noflash=1 \
     otaudpater.rebootcmd=$$NULL$$
