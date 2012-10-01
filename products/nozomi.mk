@@ -43,8 +43,8 @@ PRODUCT_COPY_FILES += \
 
 # Hardware Info
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.device.cpu=Snapdragon S3 \
-    ro.device.front_cam=1.3 MP \
-    ro.device.gpu=Adreno 220 \
-    ro.device.rear_cam=12 MP \
-    ro.device.screen_res=720 x 1280 Pixels
+    ro.device.cpu=Snapdragon_S3 \
+    ro.device.front_cam=1.3MP \
+    ro.device.gpu=Adreno_220 \
+    ro.device.rear_cam=12MP \
+    ro.device.screen_res=720x1280_Pixels
