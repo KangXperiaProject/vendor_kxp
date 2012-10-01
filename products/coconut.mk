@@ -43,8 +43,8 @@ PRODUCT_COPY_FILES += \
 
 # Hardware Info
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.device.cpu=Snapdragon S2 \
+    ro.device.cpu=Snapdragon_S2 \
     ro.device.front_cam=VGA \
-    ro.device.gpu=Adreno 205 \
-    ro.device.rear_cam=5 MP \
-    ro.device.screen_res=320 x 480 Pixels
+    ro.device.gpu=Adreno_205 \
+    ro.device.rear_cam=5MP \
+    ro.device.screen_res=320x480_Pixels
