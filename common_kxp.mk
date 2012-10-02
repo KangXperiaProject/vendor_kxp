@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Apollo \
     DSPManager \
+    libcyanogen-dsp \
     Trebuchet \
     LegacyCamera 
 #    Spearmint \
