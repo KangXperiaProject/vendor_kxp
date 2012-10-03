@@ -1,4 +1,6 @@
 #### Devices Supported by KangXperiaProject
+add_lunch_combo aokp_mint-userdebug
+add_lunch_combo aokp_aoba-userdebug
 add_lunch_combo aokp_nozomi-userdebug
 add_lunch_combo aokp_hikari-userdebug
 add_lunch_combo aokp_anzu-userdebug
