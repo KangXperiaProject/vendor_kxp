@@ -1,5 +1,5 @@
 #we will change the $USER variable here to make our builds have better naming :)
-USER := kxp_build4
+USER := kxp_build4_r1
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
