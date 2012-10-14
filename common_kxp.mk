@@ -36,8 +36,7 @@ PRODUCT_PACKAGES += \
     Apollo \
     DSPManager \
     libcyanogen-dsp \
-    Trebuchet \
-    LegacyCamera 
+    Trebuchet
 #    Spearmint \
 #    Grape \
 #    Bubble \
