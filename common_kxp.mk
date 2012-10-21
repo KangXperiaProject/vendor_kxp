@@ -17,5 +17,6 @@ PRODUCT_PACKAGES += \
     Cherry \
     Orange \
     DSPManager \
+    libcyanogen-dsp \
     Trebuchet \
     AchepClock
