@@ -1,5 +1,5 @@
 #we will change the $USER variable here to make our builds have better naming :)
-USER := kxp_build4_r1
+USER := kxp_build5
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -11,8 +11,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Ota Updater Pro app
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=kxp \
-    otaupdater.otaver=$(USER) \
-    otaupdater.otatime=20121014-0000 \
+    otaupdater.otaver=4120500 \
+    otaupdater.otatime=20121022-0000 \
     otaupdater.noflash=1 \
     otaudpater.rebootcmd=NULL
 
