@@ -5,12 +5,12 @@ USER := kxp_build5
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=kxp \
     ro.goo.rom=kxp \
-    ro.goo.version=4120401
+    ro.goo.version=4120500
 #goo version is like this -> 411 for jellybean 4.1.1, 02 for build2, 02 for r2
 
 #Ota Updater Pro app
 PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=kxp \
+    otaupdater.otaid=$(PRODUCT_DEVICE)_$(USER) \
     otaupdater.otaver=4120500 \
     otaupdater.otatime=20121022-0000 \
     otaupdater.noflash=1 \
