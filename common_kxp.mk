@@ -36,7 +36,8 @@ PRODUCT_PACKAGES += \
     Apollo \
     DSPManager \
     libcyanogen-dsp \
-    Trebuchet
+    Trebuchet \
+    Thinkfree
 #    Spearmint \
 #    Grape \
 #    Bubble \
