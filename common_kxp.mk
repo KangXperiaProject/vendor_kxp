@@ -11,12 +11,7 @@ PRODUCT_COPY_FILES += \
 # Unofficial packages that KangXperiaProject uses from trees outside AOKP
 PRODUCT_PACKAGES += \
     Apollo \
-    Spearmint \
-    Grape \
-    Bubble \
-    Cherry \
-    Orange \
     DSPManager \
     libcyanogen-dsp \
-    Trebuchet \
-    AchepClock
+    Trebuchet #\
+#    AchepClock
