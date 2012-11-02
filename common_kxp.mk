@@ -5,17 +5,18 @@ USER := kxp_milestone1
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=kxp \
     ro.goo.rom=kxp \
-    ro.goo.version=4121100
-#goo version is like this -> 411 for jellybean 4.1.1, 02 for build2, 02 for r2
-#for milestone we use double digits like 11 for milestone 1
+    ro.goo.version=41210100
+#goo version is like this -> 411 for jellybean 4.1.1, 002 for build2, 02 for r2 = 41100202
+#for milestone we use triple digits like 101, 102 for milestone 1, 2 etc
 
 #Ota Updater Pro app
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=$(PRODUCT_DEVICE)_$(USER) \
-    otaupdater.otaver=4121100 \
+    otaupdater.otaver=41210100 \
     otaupdater.otatime=20121030-0000 \
     otaupdater.noflash=1 \
     otaudpater.rebootcmd=NULL
+#note : please use ROM name  "KangXperiaProject" when updating the OTA server
 
 PRODUCT_COPY_FILES += \
     vendor/kxp/prebuilt/app/OTAUpdater-1.0.5.apk:system/app/OTAUpdater-1.0.5.apk
@@ -27,8 +28,7 @@ PRODUCT_COPY_FILES += \
 #Use a free file manager and terminal untill AOKP adds an official filemanager
 PRODUCT_COPY_FILES += \
     vendor/kxp/prebuilt/app/AndroidTerminalEmulator.apk:system/app/AndroidTerminalEmulator.apk \
-    vendor/kxp/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
-    vendor/kxp/prebuilt/app/FileManager.apk:system/app/FileManager.apk
+    vendor/kxp/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 
 
@@ -38,7 +38,8 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     Trebuchet \
-    Thinkfree
+    Thinkfree \
+    CMFileManager
 #    Spearmint \
 #    Grape \
 #    Bubble \
