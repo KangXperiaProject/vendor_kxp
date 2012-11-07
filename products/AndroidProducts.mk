@@ -6,3 +6,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/kumquat.mk \
     $(LOCAL_DIR)/pepper.mk \
     $(LOCAL_DIR)/lotus.mk \
+    $(LOCAL_DIR)/es209ra.mk
