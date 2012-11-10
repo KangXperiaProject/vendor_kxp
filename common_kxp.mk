@@ -1,18 +1,20 @@
 #we will change the $USER variable here to make our builds have better naming :)
 USER := kxp_milestone1
+KXP_VERSION_NUMBER := 41210100
+# version is like this -> 411 for jellybean 4.1.1, 002 for build2, 02 for r2 = 41100202
+#for milestone we use triple digits like 101, 102 for milestone 1, 2 etc
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=kxp \
     ro.goo.rom=kxp \
-    ro.goo.version=41210100
-#goo version is like this -> 411 for jellybean 4.1.1, 002 for build2, 02 for r2 = 41100202
-#for milestone we use triple digits like 101, 102 for milestone 1, 2 etc
+    ro.goo.version=$(KXP_VERSION_NUMBER)
+
 
 #Ota Updater Pro app
 PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=$(PRODUCT_DEVICE)_$(USER) \
-    otaupdater.otaver=41210100 \
+    otaupdater.otaid=kxp_$(TARGET_PRODUCT) \
+    otaupdater.otaver=$(KXP_VERSION_NUMBER) \
     otaupdater.otatime=20121110-0000 \
     otaupdater.noflash=1 \
     otaudpater.rebootcmd=NULL
