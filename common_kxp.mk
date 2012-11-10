@@ -13,7 +13,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=$(PRODUCT_DEVICE)_$(USER) \
     otaupdater.otaver=41210100 \
-    otaupdater.otatime=20121030-0000 \
+    otaupdater.otatime=20121110-0000 \
     otaupdater.noflash=1 \
     otaudpater.rebootcmd=NULL
 #note : please use ROM name  "KangXperiaProject" when updating the OTA server
@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    vendor/kxp/prebuilt/bootlogo/$(BOOTLOGO_SIZE).rle:root/logo.rle
 
-#Use a free file manager and terminal untill AOKP adds an official filemanager
+#Use a free terminal emulator as AOKP has none
 PRODUCT_COPY_FILES += \
     vendor/kxp/prebuilt/app/AndroidTerminalEmulator.apk:system/app/AndroidTerminalEmulator.apk \
     vendor/kxp/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
