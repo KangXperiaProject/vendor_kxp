@@ -1,6 +1,7 @@
 #we will change the $USER variable here to make our builds have better naming :)
-USER := kxp_milestone1
-KXP_VERSION_NUMBER := 41210100
+USER := kxp_milestone1-r1
+KXP_VERSION_NUMBER := 41210101
+KXP_VERSION_RELEASEDATE := 20121121-0000
 # version is like this -> 411 for jellybean 4.1.1, 002 for build2, 02 for r2 = 41100202
 #for milestone we use triple digits like 101, 102 for milestone 1, 2 etc
 
@@ -15,7 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otaid=kxp_$(TARGET_PRODUCT) \
     otaupdater.otaver=$(KXP_VERSION_NUMBER) \
-    otaupdater.otatime=20121110-0000 \
+    otaupdater.otatime=$(KXP_VERSION_RELEASEDATE) \
     otaupdater.noflash=1 \
     otaudpater.rebootcmd=NULL
 #note : please use ROM name  "KangXperiaProject" when updating the OTA server
