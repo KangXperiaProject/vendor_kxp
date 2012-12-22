@@ -38,11 +38,11 @@ PRODUCT_COPY_FILES += \
 # Unofficial packages that KangXperiaProject uses from trees outside AOKP
 PRODUCT_PACKAGES += \
     Apollo \
+    DSPManager \
+    libcyanogen-dsp \
     Trebuchet \
     Thinkfree \
     CMFileManager
-#    DSPManager \
-#    libcyanogen-dsp \
 #    Spearmint \
 #    Grape \
 #    Bubble \
