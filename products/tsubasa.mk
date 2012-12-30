@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
 
+#TWRP
+#KXP_INCLUDE_TWRP := true
+TWRP_RAMDISK_DEVICE := mint
+
 # Hardware Info
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.device.cpu=Snapdragon_S4_Krait \

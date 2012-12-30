@@ -19,7 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     otaupdater.otatime=$(KXP_VERSION_RELEASEDATE) \
     otaupdater.noflash=1 \
     otaudpater.rebootcmd=NULL
-#note : please use ROM name  "KangXperiaProject" when updating the OTA server
+#note : please use ROM name  "kxp_aokp_<devicename>" when updating the OTA server e.g. kxp_aokp_nozomi
 
 PRODUCT_COPY_FILES += \
     vendor/kxp/prebuilt/app/OTAUpdater-1.0.5.apk:system/app/OTAUpdater-1.0.5.apk
@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/kxp/prebuilt/app/AndroidTerminalEmulator.apk:system/app/AndroidTerminalEmulator.apk \
     vendor/kxp/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
-
 
 
 # Unofficial packages that KangXperiaProject uses from trees outside AOKP
