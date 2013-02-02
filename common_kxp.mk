@@ -11,18 +11,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.rom=kxp \
     ro.goo.version=$(KXP_VERSION_NUMBER)
 
-
+######################################################################################################
 #Ota Updater Pro app
-PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=kxp_$(TARGET_PRODUCT) \
-    otaupdater.otaver=$(KXP_VERSION_NUMBER) \
-    otaupdater.otatime=$(KXP_VERSION_RELEASEDATE) \
-    otaupdater.noflash=1 \
-    otaudpater.rebootcmd=NULL
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    otaupdater.otaid=kxp_$(TARGET_PRODUCT) \
+#    otaupdater.otaver=$(KXP_VERSION_NUMBER) \
+#    otaupdater.otatime=$(KXP_VERSION_RELEASEDATE) \
+#    otaupdater.noflash=1 \
+#    otaudpater.rebootcmd=NULL
 #note : please use ROM name  "kxp_aokp_<devicename>" when updating the OTA server e.g. kxp_aokp_nozomi
-
-PRODUCT_COPY_FILES += \
-    vendor/kxp/prebuilt/app/OTAUpdater-1.0.5.apk:system/app/OTAUpdater-1.0.5.apk
+#
+#PRODUCT_COPY_FILES += \
+#    vendor/kxp/prebuilt/app/OTAUpdater-1.0.5.apk:system/app/OTAUpdater-1.0.5.apk
+#######################################################################################################
 
 #we will use our own bootlogo 
 PRODUCT_COPY_FILES += \
