@@ -12,6 +12,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/iyokan.mk \
     $(LOCAL_DIR)/zeus.mk \
     $(LOCAL_DIR)/zeusc.mk \
+    $(LOCAL_DIR)/jlo.mk \
+    $(LOCAL_DIR)/mesona.mk \
+    $(LOCAL_DIR)/tapioca.mk \
     $(LOCAL_DIR)/satsuma.mk \
     $(LOCAL_DIR)/mango.mk \
     $(LOCAL_DIR)/smultron.mk \
