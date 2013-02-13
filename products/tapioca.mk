@@ -18,7 +18,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/tapioca
 PRODUCT_NAME := aokp_tapioca
 PRODUCT_BRAND := sony
 PRODUCT_DEVICE := tapioca
-PRODUCT_MODEL := Xperia Miro
+PRODUCT_MODEL := Xperia Tipo
 PRODUCT_MANUFACTURER := sony
 
 #skip asserts for now
