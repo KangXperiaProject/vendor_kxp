@@ -17,7 +17,6 @@ PRODUCT_COPY_FILES += \
 
 #Use a free terminal emulator as AOKP has none
 PRODUCT_COPY_FILES += \
-    vendor/kxp/prebuilt/app/AndroidTerminalEmulator.apk:system/app/AndroidTerminalEmulator.apk \
     vendor/kxp/prebuilt/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 
@@ -28,4 +27,5 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     Trebuchet \
     Thinkfree \
-    CMFileManager
+    CMFileManager \
+    AndroidTerminalEmulator
