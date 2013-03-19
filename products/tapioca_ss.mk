@@ -4,20 +4,20 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
-# Inherit AOSP device configuration for tapioca
-$(call inherit-product-if-exists, device/sony/tapioca/full_tapioca.mk)
+# Inherit AOSP device configuration for tapioca_ss
+$(call inherit-product-if-exists, device/sony/tapioca_ss/full_tapioca_ss.mk)
 
 # Call KXP vendor to get unofficial additions
 BOOTLOGO_SIZE := 320x480
 $(call inherit-product, vendor/kxp/common_kxp.mk)
 
-# tapioca overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/tapioca
+# tapioca_ss overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/kxp/overlay/tapioca_ss
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_tapioca
+PRODUCT_NAME := aokp_tapioca_ss
 PRODUCT_BRAND := sony
-PRODUCT_DEVICE := tapioca
+PRODUCT_DEVICE := tapioca_ss
 PRODUCT_MODEL := Xperia Tipo
 PRODUCT_MANUFACTURER := sony
 
@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     Mms \
     Music
 
-# Copy tapioca specific prebuilt files
+# Copy tapioca_ss specific prebuilt files
 PRODUCT_PACKAGES += \
     bootanimation_320_480 \
     ThinkFree  

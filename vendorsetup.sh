@@ -14,7 +14,7 @@ add_lunch_combo aokp_zeus-userdebug
 add_lunch_combo aokp_zeusc-userdebug
 add_lunch_combo aokp_jlo-userdebug
 add_lunch_combo aokp_mesona-userdebug
-add_lunch_combo aokp_tapioca-userdebug
+add_lunch_combo aokp_tapioca_ss-userdebug
 add_lunch_combo aokp_satsuma-userdebug
 add_lunch_combo aokp_smultron-userdebug
 add_lunch_combo aokp_coconut-userdebug
