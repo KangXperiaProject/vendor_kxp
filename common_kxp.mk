@@ -1,5 +1,5 @@
 #we will change the $USER variable here to make our builds have better naming :)
-USER := jb-mr1-milestone-1
+USER := kxp-jb-mr1-$(DATE)
 KXP_VERSION_NUMBER := 42210100
 KXP_VERSION_RELEASEDATE := 20130417-0000
 # version is like this -> 411 for jellybean 4.1.1, 002 for build2, 02 for r2 = 41100202
