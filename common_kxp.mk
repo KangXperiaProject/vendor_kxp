@@ -25,7 +25,6 @@ PRODUCT_PACKAGES += \
     Apollo \
     DSPManager \
     libcyanogen-dsp \
-    Trebuchet \
     Thinkfree \
     CMFileManager \
     AndroidTerminalEmulator
